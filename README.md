@@ -1,25 +1,42 @@
 # Sistema Tickets
-Programa em C# e WPF (Windows Presentation Forms) criado para gerenciar a quantidade de tickets de refeições entregues para cada funcionário de uma empresa.
 
-<hr>
+Este é um programa desenvolvido em C# e WPF (Windows Presentation Forms) para gerenciar a quantidade de tickets de refeição distribuídos para os funcionários de uma empresa.
 
-## 🌱 Utilizando C# e WPF desenvolvi um sistema simples de controle de tickets de refeição em uma empresa.
-### O Programa realiza CRUD no banco de dados MySQL.
+---
 
-<hr>
+## 🌱 Sobre o projeto
 
-# Principais Funcionálidades:
-## Uma tabela com as informações dos funcionários e também dos tickets entregues para cada funcionário, para acessa-las a cima da tabela possui dois botões com suas repectivas tabelas. Caso o usuário clique uma vez em cima de uma linha será filtrado o total de tickets baseado no funcionário da linha selecionada, já caso o usuário clicar duas vezes na linha, vai ser aberto uma tela para editar as informações dessa linha, que será salvo no Banco de dados.
+Este sistema foi desenvolvido com C# e WPF para realizar o controle dos tickets de refeição em uma empresa. Ele permite realizar operações de CRUD (Create, Read, Update, Delete) no banco de dados MySQL, oferecendo uma interface simples e intuitiva.
 
-## Já acima da tabela existem 3 ícones, um de "Lápis" que permite editar um funcionário, caso o usuário saiba o ID que deseja editar, um icone de + que permite o usuário adicionar tanto novos tickets quanto funcionários ao banco de dados, e outro para atualizar a tabela, que "Limpa os filtros". Já no canto superior direito é possível filtrar por data.
+---
 
-## Todos os valores, tanto editados quanto adicionados, passam por uma verificação para evitar a inserção de dados inválidos, como, por exemplo, CPF com letras ou inserir CPF's já inseridos anteriormente.
+# Funcionalidades principais
 
-<hr>
+- **Tabela de funcionários e tickets:** O sistema exibe uma tabela com as informações dos funcionários e os tickets distribuídos para cada um. Acima da tabela, há dois botões para acessar as respectivas tabelas.  
+  - **Clique simples:** Ao clicar em uma linha, o sistema filtra e exibe o total de tickets associados ao funcionário selecionado.  
+  - **Clique duplo:** Ao clicar duas vezes, uma tela é aberta para editar as informações da linha selecionada, e as alterações são salvas diretamente no banco de dados.
 
-# Como usar/testar o programa (IMPORTANTE) 
-## Nota: Ao meu ver este é o método mais fácil de se executar o programa.
-## Requisitos: Arquivo ZIP, Visual Studio 2022 e MySQL + Backup.
-### Instale o Visual studio 2022, após isso, abra a IDE e clique em "Continuar sem código", no canto superior vá em Arquivo > Abrir > Projeto/Solução, e abra o SistemaTickets.sln no arquivo ZIP extraido.
-### Para configurar o Banco de dados, baixe o Backup, configure o Mysql, vá em 'Server' > Import Data. Para configurar no programa, vá para a IDE e na pasta Data > DbContext.cs > Mude os valores da string connectionString, colocando as crenciais que você configurou no seu mysql
+- **Ícones de ação:**
+  - **Lápis:** Permite editar um funcionário, caso o ID seja conhecido.
+  - **Adicionar (+):** Permite adicionar novos funcionários ou tickets ao banco de dados.
+  - **Atualizar:** Limpa todos os filtros e atualiza a tabela com os dados mais recentes.
+  - **Filtro por data:** No canto superior direito, você pode filtrar as informações de acordo com a data.
 
+- **Validação de dados:** O sistema garante que todos os dados inseridos ou editados passem por uma verificação, evitando erros como a inclusão de CPFs inválidos (com letras) ou a duplicação de CPFs já cadastrados.
+
+---
+
+# Como usar/testar o programa (IMPORTANTE)
+
+### Requisitos:
+- Visual Studio 2022
+- MySQL com o backup do banco de dados
+- Arquivo ZIP com o projeto
+
+### Passos para executar:
+1. Instale o Visual Studio 2022.
+2. Abra a IDE e selecione "Continuar sem código".
+3. No menu superior, vá em **Arquivo > Abrir > Projeto/Solução** e selecione o arquivo `SistemaTickets.sln` a partir do ZIP extraído.
+4. Para configurar o banco de dados:
+   - Importe o backup no MySQL através de **Server > Import Data**.
+   - No projeto, navegue até **Data > DbContext.cs** e atualize a `connectionString` com as credenciais do seu MySQL.
