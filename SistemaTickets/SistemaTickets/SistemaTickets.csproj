@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Imagens\Icones\AddIcon.png" />
+    <None Remove="Imagens\Icones\CancelIcon.png" />
+    <None Remove="Imagens\Icones\ConfirmarIcon.png" />
+    <None Remove="Imagens\Icones\EditIcon.png" />
+    <None Remove="Imagens\Icones\ReloadIcon.png" />
+    <None Remove="Imagens\Icones\TicketIcon.png" />
+    <None Remove="Imagens\Icones\UserIcon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Imagens\Icones\AddIcon.png" />
+    <Resource Include="Imagens\Icones\CancelIcon.png" />
+    <Resource Include="Imagens\Icones\ConfirmarIcon.png" />
+    <Resource Include="Imagens\Icones\EditIcon.png" />
+    <Resource Include="Imagens\Icones\ReloadIcon.png" />
+    <Resource Include="Imagens\Icones\TicketIcon.png" />
+    <Resource Include="Imagens\Icones\UserIcon.png" />
+  </ItemGroup>
+
+</Project>
