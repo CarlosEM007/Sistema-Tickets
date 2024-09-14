@@ -31,7 +31,7 @@ Este sistema foi desenvolvido com C# e WPF para realizar o controle dos tickets 
 ### Requisitos:
 - Visual Studio 2022
 - MySQL com o backup do banco de dados
-- Arquivo ZIP com o projeto
+- Arquivo ZIP com o projeto (Possui todas as dependências do projeto)
 
 ### Passos para executar:
 1. Instale o Visual Studio 2022.
